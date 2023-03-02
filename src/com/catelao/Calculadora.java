@@ -75,11 +75,11 @@ public class Calculadora {
                 try {
                     if (dato1==2){
                         RESULTADO = (float) Math.sqrt(dato2);
-                        System.out.println("La raiz cuadrada de " + dato2 + " es: " + RESULTADO );
+                        System.out.println("La raíz cuadrada de " + dato2 + " es: " + RESULTADO );
                     }
                     if (dato1==3){
                         RESULTADO = (float) Math.cbrt(dato2);
-                        System.out.println("La raiz cubica de " + dato2 + " es: " + RESULTADO );
+                        System.out.println("La raíz cubica de " + dato2 + " es: " + RESULTADO );
                     }
                 } catch (Exception calcular) {
                     System.out.println("Error al realizar la operacion seleccionada");
