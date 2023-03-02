@@ -16,6 +16,7 @@ public class Calculadora {
     public static final int RESTA = 2;
     public static final int MULTIPLICACION = 3;
     public static final int DIVISION = 4;
+    public static final int RAIZ = 5;
     public static float RESULTADO = 0;
     /**fin de las opciones para la calculadora*/
 
@@ -67,6 +68,21 @@ public class Calculadora {
                     RESULTADO=division;
                 } catch (Exception calcular) {
                     System.out.println("Error al realizar la operacion");
+                    System.out.println(calcular.getMessage());
+                }
+                break;
+            case RAIZ:
+                try {
+                    if (dato1==2){
+                        RESULTADO = (float) Math.sqrt(dato2);
+                        System.out.println("La raiz cuadrada de " + dato2 + " es: " + RESULTADO );
+                    }
+                    if (dato1==3){
+                        RESULTADO = (float) Math.cbrt(dato2);
+                        System.out.println("La raiz cubica de " + dato2 + " es: " + RESULTADO );
+                    }
+                } catch (Exception calcular) {
+                    System.out.println("Error al realizar la operacion seleccionada");
                     System.out.println(calcular.getMessage());
                 }
                 break;
