@@ -16,6 +16,7 @@ public class Calculadora {
     public static final int RESTA = 2;
     public static final int MULTIPLICACION = 3;
     public static final int DIVISION = 4;
+    public static final int RAIZ = 5;
     public static float RESULTADO = 0;
     /**fin de las opciones para la calculadora*/
 
@@ -68,6 +69,14 @@ public class Calculadora {
                 } catch (Exception calcular) {
                     System.out.println("Error al realizar la operacion");
                     System.out.println(calcular.getMessage());
+                }
+                break;
+            case RAIZ:
+                try {
+
+
+                } catch (Exception calcular) {
+
                 }
                 break;
         }
