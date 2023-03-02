@@ -82,7 +82,7 @@ public class Calculadora {
                         System.out.println("La raiz cubica de " + dato2 + " es: " + RESULTADO );
                     }
                 } catch (Exception calcular) {
-                    System.out.println("Error al realizar la operacion");
+                    System.out.println("Error al realizar la operacion seleccionada");
                     System.out.println(calcular.getMessage());
                 }
                 break;
